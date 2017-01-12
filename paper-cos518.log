@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 JAN 2017 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 JAN 2017 13:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -549,23 +549,35 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 ) (./intro.tex) (./background.tex
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 9.
 
-Underfull \hbox (badness 7344) in paragraph at lines 14--15
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+
+Underfull \hbox (badness 2680) in paragraph at lines 15--16
+\T1/ptm/m/n/10.95 The most straight-for-ward risk is that a user's
+ []
+
+
+Underfull \hbox (badness 7344) in paragraph at lines 15--16
 \T1/ptm/m/n/10.95 pass-word is cap-tured in tran-sit as plain-text.
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 14--15
+Underfull \hbox (badness 2073) in paragraph at lines 15--16
 \T1/ptm/m/n/10.95 The most pop-u-lar so-lu-tion to eaves-drop-ping is
  []
 
 
-Underfull \hbox (badness 3189) in paragraph at lines 14--15
+Underfull \hbox (badness 3189) in paragraph at lines 15--16
 \T1/ptm/m/n/10.95 to use HTTP Se-cure (HTTPS), which tun-nels
  []
 
 
-Underfull \hbox (badness 4341) in paragraph at lines 14--15
+Underfull \hbox (badness 4341) in paragraph at lines 15--16
 \T1/ptm/m/n/10.95 an HTTP con-nec-tion through a TLS con-nec-
  []
 
@@ -573,176 +585,203 @@ Underfull \hbox (badness 4341) in paragraph at lines 14--15
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 22.
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
+ []
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 24.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 
-Underfull \hbox (badness 1082) in paragraph at lines 22--23
+Underfull \hbox (badness 1082) in paragraph at lines 24--25
 \T1/ptm/m/n/10.95 pass-words are com-pro-mised on a com-pa-ny’s
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 22--23
+Underfull \hbox (badness 1655) in paragraph at lines 24--25
 \T1/ptm/m/n/10.95 web server. As dis-cussed in the in-tro-duc-tion,
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 22--23
+Underfull \hbox (badness 1019) in paragraph at lines 24--25
 \T1/ptm/m/n/10.95 these at-tacks have hap-pened or been dis-cov-ered
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 22--23
+Underfull \hbox (badness 1348) in paragraph at lines 24--25
 \T1/ptm/m/n/10.95 pass-word on record. “Salt-ing” is adding
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 22--23
+Underfull \hbox (badness 1168) in paragraph at lines 24--25
 \T1/ptm/m/n/10.95 web-site. Un-for-tu-nately, many pop-u-lar web-sites
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 22--23
+Underfull \hbox (badness 1845) in paragraph at lines 24--25
 \T1/ptm/m/n/10.95 in its of-fi-cial state-ment, Ya-hoo only con-firmed
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 22--23
+Underfull \hbox (badness 1057) in paragraph at lines 24--25
 \T1/ptm/m/n/10.95 that the “-vast ma-jor-i-ty” of pass-words had
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 \T1/ptm/m/n/10.95 https://yahoo.tumblr.com/post/150781911849/an-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 \T1/ptm/m/n/10.95 important-message-about-yahoo-user-security],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 []$\T1/pcr/m/n/10.95 http : / / link . springer . com / chapter /
  []
 
 
-Underfull \hbox (badness 6995) in paragraph at lines 22--23
+Underfull \hbox (badness 6995) in paragraph at lines 24--25
 \T1/pcr/m/n/10.95 10 . 1007 / 11535218 _ 2$[] \T1/ptm/m/n/10.95 TK 2 more SHA-1
 
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 30--31
+Underfull \vbox (badness 1102) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 33--34
 []\T1/ptm/m/n/10.95 Another com-mon means of com-pro-mis-ing a
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 30--31
+Underfull \hbox (badness 1454) in paragraph at lines 33--34
 \T1/ptm/m/n/10.95 user’s ac-count is called “phish-ing.” In
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 30--31
+Underfull \hbox (badness 1337) in paragraph at lines 33--34
 \T1/ptm/m/n/10.95 phish-ing, a user is asked to sub-mit their user-
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 30--31
+Underfull \hbox (badness 2376) in paragraph at lines 33--34
 \T1/ptm/m/n/10.95 is re-quired [TK: http://www.cs.utexas.edu/ bwa-
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 30--31
+Underfull \hbox (badness 1014) in paragraph at lines 33--34
 \T1/ptm/m/n/10.95 ters/publications/papers/www2005.pdf]. How-ever
  []
 
 
-Underfull \hbox (badness 4205) in paragraph at lines 45--48
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 51--54
 []\T1/ptm/m/n/10.95 Finally, pass-words are in-se-cure be-cause re-
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 45--48
+Underfull \hbox (badness 2213) in paragraph at lines 51--54
 \T1/ptm/m/n/10.95 are pop-u-lar tools to gen-er-ate and save unique
  []
 
 
-Underfull \hbox (badness 2126) in paragraph at lines 45--48
+Underfull \hbox (badness 2126) in paragraph at lines 51--54
 \T1/ptm/m/n/10.95 user pass-words, re-duc-ing pass-word reuse with-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--48
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
 \T1/ptm/m/n/10.95 [TK: []$\T1/pcr/m/n/10.95 https : / / www . usenix . org / sy
 stem /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--48
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
 \T1/pcr/m/n/10.95 files / conference / usenixsecurity14 /
  []
 
 
-Underfull \hbox (badness 1360) in paragraph at lines 45--48
+Underfull \hbox (badness 1360) in paragraph at lines 51--54
 \T1/pcr/m/n/10.95 sec14-[]paper-[]li-[]zhiwei . pdf$[]\T1/ptm/m/n/10.95 ]. Ad-d
 i-tion-
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 45--48
+Underfull \hbox (badness 1348) in paragraph at lines 51--54
 \T1/ptm/m/n/10.95 third-party or are not portable. Im-por-tantly, a
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 45--48
+Underfull \hbox (badness 1142) in paragraph at lines 51--54
 \T1/ptm/m/n/10.95 use of a pass-word man-ager with-out stor-ing the
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 45--48
+Underfull \hbox (badness 3965) in paragraph at lines 51--54
 \T1/ptm/m/n/10.95 ters/publications/papers/www2005.pdf] This does
  []
 
-[2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
-(./design.tex) (./eval.tex) (./related.tex) (./conclusion.tex)
-(./paper-cos518.bbl
+Underfull \vbox (badness 1043) has occurred while \output is active []
+
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 62.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)) (./design.tex) (./eval.tex) (./related.tex) (./conclusion.tex) (./paper-cos5
+18.bbl
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
 
-Underfull \hbox (badness 4713) in paragraph at lines 15--20
+Underfull \hbox (badness 4713) in paragraph at lines 9--14
 []\T1/ptm/m/n/10 S. Fiegerman.  Ya-hoo says 500 mil-lion ac-
  []
 
 
-Underfull \hbox (badness 2591) in paragraph at lines 15--20
+Underfull \hbox (badness 2591) in paragraph at lines 9--14
 \T1/ptm/m/n/10 counts stolen, 2016.  URL []$\T1/pcr/m/n/10 http : / / money .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--20
+Underfull \hbox (badness 10000) in paragraph at lines 9--14
 \T1/pcr/m/n/10 cnn . com / 2016 / 09 / 22 / technology /
  []
 
 
-Underfull \hbox (badness 5504) in paragraph at lines 15--20
+Underfull \hbox (badness 5504) in paragraph at lines 9--14
 \T1/pcr/m/n/10 yahoo-[]data-[]breach/$[]\T1/ptm/m/n/10 .  [On-line; ac-cessed
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
 Underfull \hbox (badness 10000) in paragraph at lines 34--40
 \T1/ptm/m/n/10 pro-mised by biggest data breach in his-tory,
  []
@@ -763,7 +802,7 @@ Overfull \hbox (105.25742pt too wide) in paragraph at lines 34--40
 ed$[]\T1/ptm/m/n/10 .
  []
 
-[3])
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
  [4
 
@@ -773,26 +812,26 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 147.
 Package rerunfilecheck Info: File `paper-cos518.out' has not changed.
-(rerunfilecheck)             Checksum: 9C5C982CAB2819194D1077107612C51F;337.
+(rerunfilecheck)             Checksum: 68FAAD6B3BEDEA514E98FAD80B2520C5;776.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
  ) 
 Here is how much of TeX's memory you used:
- 7224 strings out of 493014
- 105539 string characters out of 6133351
- 197860 words of memory out of 5000000
- 10617 multiletter control sequences out of 15000+600000
- 50342 words of font info for 84 fonts, out of 8000000 for 9000
+ 7264 strings out of 493014
+ 106182 string characters out of 6133351
+ 194870 words of memory out of 5000000
+ 10645 multiletter control sequences out of 15000+600000
+ 56307 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,8n,43p,1825b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,8n,43p,1825b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on paper-cos518.pdf (4 pages, 69043 bytes).
+Output written on paper-cos518.pdf (4 pages, 73207 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

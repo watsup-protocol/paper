@@ -5,12 +5,6 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Cormac~Herley(2011)]{microsoft:2011}
-P.~C. v.~O. Cormac~Herley.
-\newblock A research agenda acknowledging the persistence of passwords.
-\newblock In \emph{IEEE Security \& Privacy Magazine}, Piscataway, NJ, Feb.
-  2011.
-
 \bibitem[Fiegerman(2016{\natexlab{a}})]{Yahoo_CNN:2016}
 S.~Fiegerman.
 \newblock Yahoo says 500 million accounts stolen, 2016{\natexlab{a}}.
@@ -23,6 +17,12 @@ S.~Fiegerman.
 \newblock Plain text offenders, 2016{\natexlab{b}}.
 \newblock URL \url{http://plaintextoffenders.com/}.
 \newblock [Online; accessed 2016-01-12].
+
+\bibitem[Herley and Van~Oorschot(2012)]{microsoft:2011}
+C.~Herley and P.~Van~Oorschot.
+\newblock A research agenda acknowledging the persistence of passwords.
+\newblock \emph{IEEE Security \& Privacy}, 10\penalty0 (1):\penalty0 28--36,
+  2012.
 
 \bibitem[Hunt(2016)]{pwned:2016}
 T.~Hunt.
