@@ -1,15 +1,41 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Freedman et~al.(2004)Freedman, Freudenthal, and
-  Mazi{\`e}res]{coral:nsdi04}
-M.~J. Freedman, E.~Freudenthal, and D.~Mazi{\`e}res.
-\newblock Democratizing content publication with {Coral}.
-\newblock In \emph{Proc.\ 1st Symposium on Networked Systems Design and
-  Implementation ({NSDI})}, San Francisco, CA, Mar. 2004.
+\bibitem[Cormac~Herley(2011)]{microsoft:2011}
+P.~C. v.~O. Cormac~Herley.
+\newblock A research agenda acknowledging the persistence of passwords.
+\newblock In \emph{IEEE Security \& Privacy Magazine}, Piscataway, NJ, Feb.
+  2011.
+
+\bibitem[Fiegerman(2016{\natexlab{a}})]{Yahoo_CNN:2016}
+S.~Fiegerman.
+\newblock Yahoo says 500 million accounts stolen, 2016{\natexlab{a}}.
+\newblock URL
+  \url{http://money.cnn.com/2016/09/22/technology/yahoo-data-breach/}.
+\newblock [Online; accessed 2016-01-12].
+
+\bibitem[Fiegerman(2016{\natexlab{b}})]{offenders:2016}
+S.~Fiegerman.
+\newblock Plain text offenders, 2016{\natexlab{b}}.
+\newblock URL \url{http://plaintextoffenders.com/}.
+\newblock [Online; accessed 2016-01-12].
+
+\bibitem[Hunt(2016)]{pwned:2016}
+T.~Hunt.
+\newblock have i been pwned?, 2016.
+\newblock URL \url{https://haveibeenpwned.com/}.
+\newblock [Online; accessed 2016-01-12].
+
+\bibitem[Thielman(2016)]{Yahoo_Guardian:2016}
+S.~Thielman.
+\newblock Yahoo hack: 1bn accounts compromised by biggest data breach in
+  history, 2016.
+\newblock URL
+  \url{https://www.theguardian.com/technology/2016/dec/14/yahoo-hack-security-of-one-billion-accounts-breached}.
+\newblock [Online; accessed 2016-01-12].
 
 \end{thebibliography}

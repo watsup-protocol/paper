@@ -1,0 +1,1 @@
+rm paper-cos518.aux paper-cos518.bbl paper-cos518.blg paper-cos518.out paper-cos518.log paper-cos518.ps
