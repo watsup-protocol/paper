@@ -1,22 +1,33 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Goo(2017{\natexlab{a}})]{Google:2017:contentSecurityPolicy}
+Google, 2017{\natexlab{a}}.
+\newblock URL
+  \url{https://developer.chrome.com/extensions/contentSecurityPolicy}.
+\newblock [Online; accessed 2017-01-12].
+
+\bibitem[Goo(2017{\natexlab{b}})]{Google:2017:tabs}
+Google, 2017{\natexlab{b}}.
+\newblock URL \url{https://developer.chrome.com/extensions/tabs}.
+\newblock [Online; accessed 2017-01-12].
+
 \bibitem[PCA(2017)]{PCA:2017}
 Python cryptographic authority, 2017.
 \newblock URL \url{https://github.com/pyca}.
 \newblock [Online; accessed 2017-01-12].
 
-\bibitem[Pyt(2017{\natexlab{a}})]{Python:2017}
+\bibitem[Pyt(2017{\natexlab{a}})]{Python:2017:SystemRandom}
 Python 2.7.13 documentation, 2017{\natexlab{a}}.
 \newblock URL
   \url{https://docs.python.org/2/library/random.html#random.SystemRandom}.
 \newblock [Online; accessed 2017-01-12].
 
-\bibitem[Pyt(2017{\natexlab{b}})]{Python:2017:2}
+\bibitem[Pyt(2017{\natexlab{b}})]{Python:2017:urandom}
 Python 2.7.13 documentation, 2017{\natexlab{b}}.
 \newblock URL \url{https://docs.python.org/2/library/os.html#os.urandom}.
 \newblock [Online; accessed 2017-01-12].
@@ -91,6 +102,12 @@ N.~Perlroth.
 \newblock Lax security at linkedin is laid bare, 2012.
 \newblock URL
   \url{http://www.nytimes.com/2012/06/11/technology/linkedin-breach-exposes-light-security-even-at-data-companies.html}.
+\newblock [Online; accessed 2017-01-12].
+
+\bibitem[Terrell(2017)]{Terrell:2017}
+R.~Terrell.
+\newblock Cryptico, 2017.
+\newblock URL \url{https://github.com/wwwtyro/cryptico}.
 \newblock [Online; accessed 2017-01-12].
 
 \bibitem[Thielman(2016)]{Thielman:2016}

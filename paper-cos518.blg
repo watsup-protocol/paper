@@ -3,48 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper-cos518.aux
 The style file: abbrvnat.bst
 Database file #1: local.bib
-Warning--to sort, need author or key in Python:2017
-Warning--to sort, need author or key in Python:2017:2
+Warning--to sort, need author or key in Python:2017:SystemRandom
+Warning--to sort, need author or key in Python:2017:urandom
 Warning--to sort, need author or key in PCA:2017
-You've used 16 entries,
+Warning--to sort, need author or key in Google:2017:contentSecurityPolicy
+Warning--to sort, need author or key in Google:2017:tabs
+You've used 19 entries,
             2773 wiz_defined-function locations,
-            683 strings with 6882 characters,
-and the built_in function-call counts, 5885 in all, are:
-= -- 554
-> -- 210
-< -- 13
-+ -- 80
-- -- 63
-* -- 368
-:= -- 826
-add.period$ -- 59
-call.type$ -- 16
-change.case$ -- 69
-chr.to.int$ -- 15
-cite$ -- 38
-duplicate$ -- 297
-empty$ -- 591
-format.name$ -- 78
-if$ -- 1305
-int.to.chr$ -- 2
+            695 strings with 7207 characters,
+and the built_in function-call counts, 6695 in all, are:
+= -- 634
+> -- 220
+< -- 14
++ -- 87
+- -- 66
+* -- 419
+:= -- 917
+add.period$ -- 69
+call.type$ -- 19
+change.case$ -- 79
+chr.to.int$ -- 17
+cite$ -- 48
+duplicate$ -- 342
+empty$ -- 693
+format.name$ -- 82
+if$ -- 1495
+int.to.chr$ -- 3
 int.to.str$ -- 1
 missing$ -- 4
-newline$ -- 97
-num.names$ -- 52
-pop$ -- 202
+newline$ -- 113
+num.names$ -- 56
+pop$ -- 240
 preamble$ -- 1
-purify$ -- 53
+purify$ -- 60
 quote$ -- 0
-skip$ -- 248
+skip$ -- 284
 stack$ -- 0
-substring$ -- 142
-swap$ -- 46
+substring$ -- 150
+swap$ -- 51
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 176
-warning$ -- 3
-while$ -- 50
+type$ -- 209
+warning$ -- 5
+while$ -- 53
 width$ -- 0
-write$ -- 223
-(There were 3 warnings)
+write$ -- 261
+(There were 5 warnings)
