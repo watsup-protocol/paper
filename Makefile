@@ -11,7 +11,7 @@ SOURCES=$(NAME)-cos518.tex \
 	intro.tex \
 	background.tex \
 	design.tex \
-	eval.tex \
+	methods.tex \
 	related.tex \
 	conclusion.tex \
 	local.bib

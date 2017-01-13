@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 JAN 2017 21:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 JAN 2017 21:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -586,141 +586,199 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 62.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)) (./design.tex) (./eval.tex) (./related.tex) (./conclusion.tex) (./paper-cos5
-18.bbl
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 12.
+)) (./design.tex
+<protocol.png, id=98, 240.9pt x 125.5089pt>
+File: protocol.png Graphic file (type png)
+ <use protocol.png>
+Package pdftex.def Info: protocol.png used on input line 7.
+(pdftex.def)             Requested size: 240.8994pt x 125.50858pt.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 8.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 8.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 13.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
+) [3 <./protocol.png>]
+Underfull \hbox (badness 2027) in paragraph at lines 30--31
+[]\T1/ptm/m/n/10.95 On OTP re-quest, gen-er-ate a cryp-to-graphic
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--14
+) (./methods.tex) (./related.tex) (./conclusion.tex) (./paper-cos518.bbl
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 10.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 10.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 10.
+
+Underfull \hbox (badness 3713) in paragraph at lines 9--12
+[]\T1/ptm/m/n/10 Python cryp-to-graphic au-thor-ity, 2017.  URL
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 9--12
+[]$\T1/pcr/m/n/10 https : / / github . com / pyca$[]\T1/ptm/m/n/10 .  [On-line;
+ ac-
+ []
+
+
+Underfull \hbox (badness 6477) in paragraph at lines 14--18
+[]\T1/ptm/m/n/10 Python 2.7.13 doc-u-men-ta-tion, 2017.  URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
+[]$\T1/pcr/m/n/10 https : / / docs . python . org / 2 / library /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
+\T1/pcr/m/n/10 random . html # random . SystemRandom$[]\T1/ptm/m/n/10 .
+ []
+
+
+Underfull \hbox (badness 6477) in paragraph at lines 20--23
+[]\T1/ptm/m/n/10 Python 2.7.13 doc-u-men-ta-tion, 2017.  URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+[]$\T1/pcr/m/n/10 https : / / docs . python . org / 2 / library /
+ []
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 20--23
+\T1/pcr/m/n/10 os . html # os . urandom$[]\T1/ptm/m/n/10 .  [On-line; ac-cessed
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--30
 []\T1/ptm/m/n/10 J. Aas.  Progress to-wards 100 URL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--14
+Underfull \hbox (badness 10000) in paragraph at lines 25--30
 []$\T1/pcr/m/n/10 https : / / letsencrypt . org / 2016 / 06 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--14
+Underfull \hbox (badness 10000) in paragraph at lines 25--30
 \T1/pcr/m/n/10 22 / https-[]progress-[]june-[]2016 . html$[]\T1/ptm/m/n/10 .
  []
 
 
-Underfull \hbox (badness 3302) in paragraph at lines 16--21
+Underfull \hbox (badness 3302) in paragraph at lines 32--37
 []\T1/ptm/m/n/10 S. Fiegerman.  Ya-hoo says 500 mil-lion ac-
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 16--21
+Underfull \hbox (badness 1454) in paragraph at lines 32--37
 \T1/ptm/m/n/10 counts stolen, 2016.  URL []$\T1/pcr/m/n/10 http : / / money .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--21
+Underfull \hbox (badness 10000) in paragraph at lines 32--37
 \T1/pcr/m/n/10 cnn . com / 2016 / 09 / 22 / technology /
  []
 
 
-Underfull \hbox (badness 2961) in paragraph at lines 16--21
+Underfull \hbox (badness 2961) in paragraph at lines 32--37
 \T1/pcr/m/n/10 yahoo-[]data-[]breach/$[]\T1/ptm/m/n/10 .  [On-line; ac-cessed
  []
 
 
-Underfull \hbox (badness 4279) in paragraph at lines 23--27
+Underfull \hbox (badness 4279) in paragraph at lines 39--43
 \T1/ptm/m/n/10 URL []$\T1/pcr/m/n/10 https : / / www . grc . com / sqrl / sqrl 
 .
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 29--34
+Underfull \hbox (badness 4084) in paragraph at lines 45--50
 []\T1/ptm/m/n/10 R. Hack-ett.  Linkedin lost 167 mil-lion ac-
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 29--34
+Underfull \hbox (badness 1325) in paragraph at lines 45--50
 \T1/ptm/m/n/10 count cre-den-tials in data breach, 2012.  URL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--34
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
 []$\T1/pcr/m/n/10 http : / / fortune . com / 2016 / 05 / 18 /
  []
 
 
-Overfull \hbox (12.75742pt too wide) in paragraph at lines 29--34
+Overfull \hbox (12.75742pt too wide) in paragraph at lines 45--50
 \T1/pcr/m/n/10 linkedin-[]data-[]breach-[]email-[]password/$[]\T1/ptm/m/n/10 .
  []
 
-[3]
-Underfull \hbox (badness 1292) in paragraph at lines 67--72
+[4]
+Underfull \hbox (badness 1292) in paragraph at lines 83--88
 []\T1/ptm/m/n/10 B. Lord.  An im-por-tant mes-sage about ya-hoo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--72
+Underfull \hbox (badness 10000) in paragraph at lines 83--88
 \T1/pcr/m/n/10 tumblr . com / post / 150781911849 /
  []
 
 
-Overfull \hbox (73.75742pt too wide) in paragraph at lines 67--72
+Overfull \hbox (73.75742pt too wide) in paragraph at lines 83--88
 \T1/pcr/m/n/10 an-[]important-[]message-[]about-[]yahoo-[]user-[]security$[]\T1
 /ptm/m/n/10 .
  []
 
 
-Underfull \hbox (badness 8189) in paragraph at lines 74--79
+Underfull \hbox (badness 8189) in paragraph at lines 90--95
 []\T1/ptm/m/n/10 N. Perl-roth.  Lax se-cu-rity at linkedin is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--79
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 \T1/ptm/m/n/10 laid bare, 2012.  URL []$\T1/pcr/m/n/10 http : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--79
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 \T1/pcr/m/n/10 nytimes . com / 2012 / 06 / 11 / technology /
  []
 
 
-Overfull \hbox (168.25742pt too wide) in paragraph at lines 74--79
+Overfull \hbox (168.25742pt too wide) in paragraph at lines 90--95
 \T1/pcr/m/n/10 linkedin-[]breach-[]exposes-[]light-[]security-[]even-[]at-[]dat
 a-[]companies .
  []
 
 
-Underfull \hbox (badness 6348) in paragraph at lines 81--87
+Underfull \hbox (badness 6348) in paragraph at lines 97--103
 \T1/ptm/m/n/10 pro-mised by biggest data breach in his-tory,
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 81--87
+Underfull \hbox (badness 1389) in paragraph at lines 97--103
 \T1/ptm/m/n/10 2016.  URL []$\T1/pcr/m/n/10 https : / / www . theguardian .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--87
+Underfull \hbox (badness 10000) in paragraph at lines 97--103
 \T1/pcr/m/n/10 com / technology / 2016 / dec / 14 /
  []
 
 
-Overfull \hbox (110.25742pt too wide) in paragraph at lines 81--87
+Overfull \hbox (110.25742pt too wide) in paragraph at lines 97--103
 \T1/pcr/m/n/10 yahoo-[]hack-[]security-[]of-[]one-[]billion-[]accounts-[]breach
 ed$[]\T1/ptm/m/n/10 .
  []
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
- [4
+ [5
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
@@ -728,26 +786,27 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 147.
 Package rerunfilecheck Info: File `paper-cos518.out' has not changed.
-(rerunfilecheck)             Checksum: 68FAAD6B3BEDEA514E98FAD80B2520C5;776.
+(rerunfilecheck)             Checksum: BFA7C1C257A874EF6381C105D5A6B277;828.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
  ) 
 Here is how much of TeX's memory you used:
- 7280 strings out of 493014
- 106452 string characters out of 6133351
- 197161 words of memory out of 5000000
- 10654 multiletter control sequences out of 15000+600000
- 50266 words of font info for 75 fonts, out of 8000000 for 9000
+ 7354 strings out of 493014
+ 107583 string characters out of 6133351
+ 197231 words of memory out of 5000000
+ 10714 multiletter control sequences out of 15000+600000
+ 53777 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,8n,43p,1585b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,8n,43p,1585b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/urw/times/utmri8a.pfb>
-Output written on paper-cos518.pdf (4 pages, 75828 bytes).
+016/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on paper-cos518.pdf (5 pages, 199789 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

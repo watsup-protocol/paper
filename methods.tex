@@ -1,0 +1,14 @@
+\section{Methods}
+\label{sec:methods}
+
+The proof-of-concept implementation has two components: a back-end web server that is a stand-in for any web application that implements the WATSUP protocol, and an open-source browser extension that sandboxes the login form from the web page and implements the client-side of the WATSUP protocol.
+
+\subsection{Server}
+
+The server is responsible for generating cryptographically secure nonces, encrypting them with users' public keys before sending them to the client, and handling traditional user registration and login once the correct nonces are returned.
+
+To generate the nonce, the server uses Python's \texttt{random} library function \texttt{SystemRandom} which is designed for cryptographic use. The function generates random numbers from information seeded by the operating system. Since the server runs on a UNIX-like operating system, \texttt{SystemRandom} queries \texttt{/dev/urandom} \cite{Python:2017, Python:2017:2}.
+
+To generate the RSA key pair the servers uses \texttt{cryptography}, an open-source Python package developed by the Python Cryptographic Authority \cite{PCA:2017}. The package primarily delegates to "backends" such as OpenSSL and CommonCrypto for the actual for platform-specific cryptographic algorithm implementations. The server uses the SHA-1 hash function for optimal asymmetric encryption padding; SHA-1 is acceptable here because adding padding does not hide sensitive information.
+
+The back-end is written in Python 2.7 and uses the Flask web framework. The server is an instance of Gunicorn, a Python WSGI HTTP server. The server runs on a Heroku instance running Ubuntu 14.04.
