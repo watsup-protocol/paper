@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -38,6 +38,11 @@ J.~Aas.
 \newblock URL
   \url{https://letsencrypt.org/2016/06/22/https-progress-june-2016.html}.
 \newblock [Online; accessed 2017-01-12].
+
+\bibitem[Blumenthal(2007)]{Blumenthal:2007}
+M.~Blumenthal.
+\newblock Encryption: Strengths and weaknesses of public-key cryptography.
+\newblock \emph{CSRS 2007}, page~1, 2007.
 
 \bibitem[Fiegerman(2016)]{Fiegerman:2016}
 S.~Fiegerman.

@@ -8,45 +8,45 @@ Warning--to sort, need author or key in Python:2017:urandom
 Warning--to sort, need author or key in PCA:2017
 Warning--to sort, need author or key in Google:2017:contentSecurityPolicy
 Warning--to sort, need author or key in Google:2017:tabs
-You've used 19 entries,
+You've used 20 entries,
             2773 wiz_defined-function locations,
-            695 strings with 7207 characters,
-and the built_in function-call counts, 6695 in all, are:
-= -- 634
-> -- 220
-< -- 14
-+ -- 87
-- -- 66
-* -- 419
-:= -- 917
-add.period$ -- 69
-call.type$ -- 19
-change.case$ -- 79
-chr.to.int$ -- 17
-cite$ -- 48
-duplicate$ -- 342
-empty$ -- 693
-format.name$ -- 82
-if$ -- 1495
+            702 strings with 7337 characters,
+and the built_in function-call counts, 7038 in all, are:
+= -- 664
+> -- 230
+< -- 16
++ -- 91
+- -- 69
+* -- 437
+:= -- 970
+add.period$ -- 72
+call.type$ -- 20
+change.case$ -- 83
+chr.to.int$ -- 18
+cite$ -- 50
+duplicate$ -- 365
+empty$ -- 727
+format.name$ -- 86
+if$ -- 1571
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 4
-newline$ -- 113
-num.names$ -- 56
-pop$ -- 240
+missing$ -- 5
+newline$ -- 118
+num.names$ -- 60
+pop$ -- 250
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 63
 quote$ -- 0
-skip$ -- 284
+skip$ -- 299
 stack$ -- 0
-substring$ -- 150
-swap$ -- 51
-text.length$ -- 3
+substring$ -- 154
+swap$ -- 55
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 209
+type$ -- 220
 warning$ -- 5
-while$ -- 53
+while$ -- 57
 width$ -- 0
-write$ -- 261
+write$ -- 274
 (There were 5 warnings)

@@ -26,3 +26,7 @@ Finally, the program generates the RSA key pair. The generated bits are used to 
 Upon user registration, the username and public key are sent to the server. Upon user login, the user sends the username to request a nonce. The server responds with a server-generated nonce, encrypted with the user's registered public key. The extension decrypts the nonce with the user's private key. The decrypted nonce is then sent to the server. Since the key pair is deterministically generated, the extension re-generates them upon every login. This ensures that the user's actual password is never saved or sent.
 
 The code for both the server and client are open source and available here: \url{https://github.com/watsup-protocol}.
+
+\subsection{Deployment}
+
+Deployment of new technologies and protocols to the internet can be a complicated process, and adoption tends to be slow and spotty. We believe the first step would be to recruit a major browser to implement client-side WATSUP, while providing open source browser plugins for all major browsers. Then, we could recruit some major websites and web frameworks to adopt WATSUP. Due to the minimal work required to implement server-side WATSUP, and cross-compatibility with existing login services, any web service should be able to provide the service with ease.
