@@ -1,9 +1,16 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aas(2016)]{letsencrypt:2016}
+J.~Aas.
+\newblock Progress towards 100% https, june 2016, 2016.
+\newblock URL
+  \url{https://letsencrypt.org/2016/06/22/https-progress-june-2016.html}.
+\newblock [Online; accessed 2016-01-12].
 
 \bibitem[Fiegerman(2016{\natexlab{a}})]{Yahoo_CNN:2016}
 S.~Fiegerman.
@@ -18,6 +25,25 @@ S.~Fiegerman.
 \newblock URL \url{http://plaintextoffenders.com/}.
 \newblock [Online; accessed 2016-01-12].
 
+\bibitem[Gibson(2015)]{SQRL:2016}
+S.~Gibson.
+\newblock Secure quick reliable login, 2015.
+\newblock URL \url{https://www.grc.com/sqrl/sqrl.htm}.
+\newblock [Online; accessed 2016-01-12].
+
+\bibitem[Hackett(2012)]{LinkedIn_Fortune:2016}
+R.~Hackett.
+\newblock Linkedin lost 167 million account credentials in data breach, 2012.
+\newblock URL
+  \url{http://fortune.com/2016/05/18/linkedin-data-breach-email-password/}.
+\newblock [Online; accessed 2016-01-12].
+
+\bibitem[Halderman et~al.(2005)Halderman, Waters, and Felten]{Halderman:2005}
+J.~A. Halderman, B.~Waters, and E.~W. Felten.
+\newblock A convenient method for securely managing passwords.
+\newblock In \emph{Proceedings of the 14th international conference on World
+  Wide Web}, pages 471--479. ACM, 2005.
+
 \bibitem[Herley and Van~Oorschot(2012)]{microsoft:2011}
 C.~Herley and P.~Van~Oorschot.
 \newblock A research agenda acknowledging the persistence of passwords.
@@ -30,6 +56,27 @@ T.~Hunt.
 \newblock URL \url{https://haveibeenpwned.com/}.
 \newblock [Online; accessed 2016-01-12].
 
+\bibitem[Li et~al.(2014)Li, He, Akhawe, and Song]{Li:2014}
+Z.~Li, W.~He, D.~Akhawe, and D.~Song.
+\newblock The emperor's new password manager: Security analysis of web-based
+  password managers.
+\newblock In \emph{23rd USENIX Security Symposium (USENIX Security 14)}, pages
+  465--479, 2014.
+
+\bibitem[Lord(2016)]{Yahoo_Official:2016}
+B.~Lord.
+\newblock An important message about yahoo user security, 2016.
+\newblock URL
+  \url{https://yahoo.tumblr.com/post/150781911849/an-important-message-about-yahoo-user-security}.
+\newblock [Online; accessed 2016-01-12].
+
+\bibitem[Perlroth(2012)]{LinkedIn_NYTimes:2012}
+N.~Perlroth.
+\newblock Lax security at linkedin is laid bare, 2012.
+\newblock URL
+  \url{http://www.nytimes.com/2012/06/11/technology/linkedin-breach-exposes-light-security-even-at-data-companies.html}.
+\newblock [Online; accessed 2016-01-12].
+
 \bibitem[Thielman(2016)]{Yahoo_Guardian:2016}
 S.~Thielman.
 \newblock Yahoo hack: 1bn accounts compromised by biggest data breach in
@@ -37,5 +84,11 @@ S.~Thielman.
 \newblock URL
   \url{https://www.theguardian.com/technology/2016/dec/14/yahoo-hack-security-of-one-billion-accounts-breached}.
 \newblock [Online; accessed 2016-01-12].
+
+\bibitem[Wang et~al.(2005)Wang, Yin, and Yu]{wang:2005}
+X.~Wang, Y.~L. Yin, and H.~Yu.
+\newblock Finding collisions in the full sha-1.
+\newblock In \emph{Annual International Cryptology Conference}, pages 17--36.
+  Springer, 2005.
 
 \end{thebibliography}

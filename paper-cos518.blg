@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper-cos518.aux
 The style file: abbrvnat.bst
 Database file #1: local.bib
-You've used 5 entries,
+You've used 13 entries,
             2773 wiz_defined-function locations,
-            619 strings with 5233 characters,
-and the built_in function-call counts, 1699 in all, are:
-= -- 154
-> -- 61
-< -- 5
-+ -- 24
-- -- 18
-* -- 101
-:= -- 264
-add.period$ -- 19
-call.type$ -- 5
-change.case$ -- 21
-chr.to.int$ -- 4
-cite$ -- 10
-duplicate$ -- 80
-empty$ -- 167
-format.name$ -- 25
-if$ -- 357
+            665 strings with 6608 characters,
+and the built_in function-call counts, 5135 in all, are:
+= -- 476
+> -- 210
+< -- 13
++ -- 77
+- -- 63
+* -- 320
+:= -- 760
+add.period$ -- 50
+call.type$ -- 13
+change.case$ -- 60
+chr.to.int$ -- 12
+cite$ -- 26
+duplicate$ -- 252
+empty$ -- 486
+format.name$ -- 78
+if$ -- 1119
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 37
-num.names$ -- 20
-pop$ -- 56
+missing$ -- 4
+newline$ -- 82
+num.names$ -- 52
+pop$ -- 163
 preamble$ -- 1
-purify$ -- 16
+purify$ -- 47
 quote$ -- 0
-skip$ -- 66
+skip$ -- 209
 stack$ -- 0
-substring$ -- 29
-swap$ -- 7
-text.length$ -- 0
+substring$ -- 133
+swap$ -- 43
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 55
+type$ -- 143
 warning$ -- 0
-while$ -- 17
+while$ -- 50
 width$ -- 0
-write$ -- 76
+write$ -- 187
