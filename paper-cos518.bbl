@@ -5,33 +5,27 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Aas(2016)]{letsencrypt:2016}
+\bibitem[Aas(2016)]{Aas:2016}
 J.~Aas.
 \newblock Progress towards 100% https, june 2016, 2016.
 \newblock URL
   \url{https://letsencrypt.org/2016/06/22/https-progress-june-2016.html}.
 \newblock [Online; accessed 2016-01-12].
 
-\bibitem[Fiegerman(2016{\natexlab{a}})]{Yahoo_CNN:2016}
+\bibitem[Fiegerman(2016)]{Fiegerman:2016}
 S.~Fiegerman.
-\newblock Yahoo says 500 million accounts stolen, 2016{\natexlab{a}}.
+\newblock Yahoo says 500 million accounts stolen, 2016.
 \newblock URL
   \url{http://money.cnn.com/2016/09/22/technology/yahoo-data-breach/}.
 \newblock [Online; accessed 2016-01-12].
 
-\bibitem[Fiegerman(2016{\natexlab{b}})]{offenders:2016}
-S.~Fiegerman.
-\newblock Plain text offenders, 2016{\natexlab{b}}.
-\newblock URL \url{http://plaintextoffenders.com/}.
-\newblock [Online; accessed 2016-01-12].
-
-\bibitem[Gibson(2015)]{SQRL:2016}
+\bibitem[Gibson(2015)]{Gibson:2016}
 S.~Gibson.
 \newblock Secure quick reliable login, 2015.
 \newblock URL \url{https://www.grc.com/sqrl/sqrl.htm}.
 \newblock [Online; accessed 2016-01-12].
 
-\bibitem[Hackett(2012)]{LinkedIn_Fortune:2016}
+\bibitem[Hackett(2012)]{Hackett:2016}
 R.~Hackett.
 \newblock Linkedin lost 167 million account credentials in data breach, 2012.
 \newblock URL
@@ -44,16 +38,22 @@ J.~A. Halderman, B.~Waters, and E.~W. Felten.
 \newblock In \emph{Proceedings of the 14th international conference on World
   Wide Web}, pages 471--479. ACM, 2005.
 
-\bibitem[Herley and Van~Oorschot(2012)]{microsoft:2011}
+\bibitem[Herley and Van~Oorschot(2012)]{Herley:2011}
 C.~Herley and P.~Van~Oorschot.
 \newblock A research agenda acknowledging the persistence of passwords.
 \newblock \emph{IEEE Security \& Privacy}, 10\penalty0 (1):\penalty0 28--36,
   2012.
 
-\bibitem[Hunt(2016)]{pwned:2016}
+\bibitem[Hunt(2016)]{Hunt:2016}
 T.~Hunt.
 \newblock have i been pwned?, 2016.
 \newblock URL \url{https://haveibeenpwned.com/}.
+\newblock [Online; accessed 2016-01-12].
+
+\bibitem[Igal~Tabachnik(2016)]{Tabachnik:2016}
+O.~v.~K. Igal~Tabachnik.
+\newblock Plain text offenders, 2016.
+\newblock URL \url{http://plaintextoffenders.com/}.
 \newblock [Online; accessed 2016-01-12].
 
 \bibitem[Li et~al.(2014)Li, He, Akhawe, and Song]{Li:2014}
@@ -63,21 +63,21 @@ Z.~Li, W.~He, D.~Akhawe, and D.~Song.
 \newblock In \emph{23rd USENIX Security Symposium (USENIX Security 14)}, pages
   465--479, 2014.
 
-\bibitem[Lord(2016)]{Yahoo_Official:2016}
+\bibitem[Lord(2016)]{Lord:2016}
 B.~Lord.
 \newblock An important message about yahoo user security, 2016.
 \newblock URL
   \url{https://yahoo.tumblr.com/post/150781911849/an-important-message-about-yahoo-user-security}.
 \newblock [Online; accessed 2016-01-12].
 
-\bibitem[Perlroth(2012)]{LinkedIn_NYTimes:2012}
+\bibitem[Perlroth(2012)]{Perlroth:2012}
 N.~Perlroth.
 \newblock Lax security at linkedin is laid bare, 2012.
 \newblock URL
   \url{http://www.nytimes.com/2012/06/11/technology/linkedin-breach-exposes-light-security-even-at-data-companies.html}.
 \newblock [Online; accessed 2016-01-12].
 
-\bibitem[Thielman(2016)]{Yahoo_Guardian:2016}
+\bibitem[Thielman(2016)]{Thielman:2016}
 S.~Thielman.
 \newblock Yahoo hack: 1bn accounts compromised by biggest data breach in
   history, 2016.
@@ -85,7 +85,7 @@ S.~Thielman.
   \url{https://www.theguardian.com/technology/2016/dec/14/yahoo-hack-security-of-one-billion-accounts-breached}.
 \newblock [Online; accessed 2016-01-12].
 
-\bibitem[Wang et~al.(2005)Wang, Yin, and Yu]{wang:2005}
+\bibitem[Wang et~al.(2005)Wang, Yin, and Yu]{Wang:2005}
 X.~Wang, Y.~L. Yin, and H.~Yu.
 \newblock Finding collisions in the full sha-1.
 \newblock In \emph{Annual International Cryptology Conference}, pages 17--36.
