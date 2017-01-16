@@ -10,10 +10,8 @@ SOURCES=$(NAME)-cos518.tex \
 	abstract.tex \
 	intro.tex \
 	background.tex \
-	design.tex \
-	methods.tex \
-	related.tex \
-	conclusion.tex \
+	protocol.tex \
+	discussion.tex \
 	local.bib
 
 # FIGS=	data/one.pdf \

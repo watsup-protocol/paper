@@ -3,43 +3,43 @@
 
 \subsection{Risks of using passwords}
 
-Verifying a user's identity is an important challenge in internet security. Passwords, despite their many drawbacks, are a critical and ubiquitous solution to the problem. Today, anyone who shops, banks, communicates, or socializes online creates multiple user accounts with a number of websites. But password usage has a number of risks, and existing solutions have disadvantages. The WATSUP protocol is designed to eliminate or mitigate as many of the most common risks mentioned below.
+Verifying a user's identity is an important challenge in internet security. Passwords, despite their many drawbacks, are a critical and ubiquitous solution to the problem. Today, anyone who shops, banks, communicates, or socializes online creates multiple user accounts with a number of websites. But password usage has a number of risks, and existing solutions have disadvantages. The WATSUP protocol is designed to eliminate or mitigate the common risks mentioned below.
 
 
-\subsubsection{Eavesdropping on plaintext}
+\subsubsection{Eavesdropping}
 
-\textbf{Solution:} \emph{Secure HTTP}
+\textbf{Solution:} \emph{HTTPS}
 
-\noindent\textbf{Complication:} \emph{Is not always supported}\\
+\noindent\textbf{Complication:} \emph{Not always supported}\\
 
 \noindent The most straightforward risk is that a user's password is captured in transit as plaintext. The most popular solution to eavesdropping is to use HTTP Secure (HTTPS), which tunnels an HTTP connection through a TLS connection. Unfortunately, while HTTPS is supported by most large companies, it is still not universally used \cite{Aas:2016}. In addition, many users may not realize that they should not use websites that do not support HTTPS.
 
 
-\subsubsection{Server being compromised}
+\subsubsection{Data breaches}
 
 \textbf{Solution:} \emph{Salting and hashing}
 
-\noindent\textbf{Complication:} \emph{Requires trusting server}\\
+\noindent\textbf{Complication:} \emph{Not always implemented}\\
 
-Perhaps the biggest risk users face is that their passwords are compromised on a company's web server. As discussed in the introduction, these attacks have happened or been discovered as recently as last year, often at staggering scales. The most common methods to mitigate the effects of losing passwords is to salt and hash them. A cryptographic hash function is a one-way function for which it is easy to verify that an input is correct, but hard to extract the input from the output. A company should hash a new password before saving it in a database; to authenticate a user, it hashes the candidate password and compares it to the hashed password on record. "Salting" is adding random information to each password. Both of these methods help prevent rainbow table attacks in which precomputed tables of common password hashed with typical hashing algorithms are used to decode hashed passwords. They also help prevent an attack reusing a compromised password on another website. Unfortunately, many popular websites do not properly handle users data. For example, in its official statement, Yahoo only confirmed that the "vast majority" of passwords had been securely hashed before they were stolen \cite{Lord:2016}, implying some (out of a billion) were not. In the 2012 LinkedIn data breach, LinkedIn failed to salt users passwords and only hashed them with the SHA-1 algorithm \cite{Perlroth:2012, Hackett:2016}, which is known to be insufficiently secure as early as 2005 \cite{Wang:2005}.
+A preventable, hidden risk users face is that their passwords are improperly stored on a company's web server. As discussed in the introduction, data breaches have happened or been discovered as recently as last year, often at staggering scales. The most common methods to mitigate the effects of losing passwords is to salt and hash them. A cryptographic hash function is a one-way function for which it is easy to verify that an input is correct, but hard to extract the input from the output. A company should hash a new password before saving it in a database; to authenticate a user, it hashes the candidate password and compares it to the hashed password on record. Salting passwords adds random information to each password. Combining these methods helps prevent rainbow table attacks in which precomputed tables of common password hashed with typical hashing algorithms are used to decode hashed passwords. They also help prevent an attack reusing a compromised password on another website. Unfortunately, many popular websites do not properly handle users data. For example, in its official statement, Yahoo only confirmed that the "vast majority" of passwords had been securely hashed before they were stolen in the 2013 attack \cite{Lord:2016}, implying some (out of a billion) were not. And in a 2012 LinkedIn data breach, LinkedIn failed to salt users' passwords and only hashed them with the SHA-1 algorithm \cite{Perlroth:2012, Hackett:2016}, which is known to be insufficiently secure as early as 2005 \cite{Wang:2005}.
 
 
 \subsubsection{Phishing}
 
-\textbf{Solution:} \emph{Hashing on hostname}
+\textbf{Solution:} \emph{Client-side hashing on hostname}
 
 \noindent\textbf{Complication:} \emph{Susceptible to rainbow table attacks}\\
 
-Another common means of compromising a user's account is called "phishing." In phishing, a user is asked to submit their username and password to a malicious website that poses as a legitimate one, typically through email request to reset a password from a domain posing as the legitimate service. One solution to this problem is to hash the password with the website's hostname before sending it. If this is done consistently, phishing is prevented because the malicious website will have a different hostname. This allows for improved portability, since no secret data is stored, and no trusted third party is required \cite{Halderman:2005}. However this method is still vulnerable to weak passwords and poor server salting. For example, an attacker who has compromised a database of passwords that has been salted with the hostname and then hashed can still create a rainbow table for that website. WATSUP's solution to this problem is to salt the base password with the hostname with the username. This prevents a rainbow table attack since the salt is unique for each user.
+Another common means of compromising a user's account is called "phishing." In phishing, a user is asked to submit their username and password to a malicious website that poses as a legitimate one, typically through an email that encourages the user to log in to a domain posing as the legitimate service. One solution to this problem is to hash the password with the website's hostname as a salt before sending it. If this is done consistently, phishing is prevented because the malicious website will have a different hostname. This allows for improved portability, since no secret data is stored, and no trusted third party is required \cite{Halderman:2005}. However this method is still vulnerable to weak passwords and poor server salting. For example, an attacker who has compromised a database of passwords that has been salted with the hostname and then hashed can still create a rainbow table for that website.
 
 
-\subsubsection{Replay attack}
+\subsubsection{Replay attacks}
 
-\textbf{Solution:} \emph{One-time passwords}
+\textbf{Solution:} \emph{Nonces}
 
 \noindent\textbf{Complication:} \emph{Not typically implemented}\\
 
-Another common attack vector is called a "replay attack." In a replay attack, an adversary intercepts the user's authentication credentials and simply re-transmits them in a subsequent login to masquerade as the original user. To prevent this, each communication can use a nonce, which is a number that can only ever be used once. Typically, they are generated by a web server and sent to the user after an initial verification step. For example, Google provides dual authentication using nonces; but this service is only provided when the user logs in from an unknown device. WATSUP's goal is to use OTPs for every log in without additional overhead for the user.
+Another common attack vector is called a "replay attack." An adversary intercepts the user's encrypted authentication credentials and re-transmits them without modification in a subsequent login to masquerade as the user. In a replay attack, the adversary does not need to decrypt the data to pose as the user. To prevent this, each encrypted communication must use a nonce, which is a number that can only ever be used once. This scrambles the encrypted data so that a re-transmitted sequence will be invalid.
 
 
 \subsubsection{Password reuse}
@@ -48,25 +48,27 @@ Another common attack vector is called a "replay attack." In a replay attack, an
 
 \noindent\textbf{Complication:} \emph{Cognitive overhead}\\
 
-Finally, passwords are insecure because remembering many strong passwords is hard, and users have a tendency to reuse passwords. Many systems have been designed to lessen the cognitive load for users. For example, password managers are popular tools to generate and save unique user passwords, reducing password reuse without increasing a user's cognitive load. However, these password managers are frequently insecure \cite{Li:2014}. Additionally, they often rely on a trusted, non-transparent third-party or are not portable. Importantly, a password manager does not prevent phishing or replay attacks. WATSUP combines the ease of use of a password manager without storing the user's password, by providing a single, transparent version of source code, and still prevents phishing and replay attacks.
-Related work
-One solution to many of the above problems is Password Multiplier, which derives a site-specific password from a base password and the site's hostname. This uses SHA-1 as a key derivation function, and the hostname as a salt. Key derivation functions are functions that take the user's base password and produce multiple distinct high entropy keys by using a distinct salt. If one derived key is compromised, the base password and all other keys remain secure.\cite{Halderman:2005} This does not protect against replay attacks on the same site. If everyone were to use this and the server failed to adequately salt and hash the derived keys, then everyone would be using the same salt. In this scenario, a rainbow table attack on a per-hostname basis would be reasonable, particularly against large databases.
+Finally, passwords are insecure because remembering many strong passwords is hard, and users have a tendency to reuse passwords. Many systems have been designed to lessen the cognitive load for users. For example, password managers are popular tools to generate and save unique user passwords, reducing password reuse without increasing a user's cognitive load. However, these password managers are frequently insecure \cite{Li:2014}. Importantly, they often rely on a trusted, non-transparent third-party or are not portable. Additionally, a password manager may not protect against phishing or replay attacks.
 
-Another similar solution is a client-server web authentication protocol known as Secure, Quick, Reliable, Login (SQRL). It performs web authentication on a "something you have" model. SQRL uses a randomly generated master password to provide strong, derived logins on a per-site basis, almost completely eliminating user passwords and making phishing difficult. On a login request, a link or QR code is provided for input to the SQRL app, which may be on a different device. The SQRL app then completes the login. As a side effect, this also protects against phishing \cite{Gibson:2016} However, SQRL has a few issues. First, it requires its own protocol, and does not run over HTTP. This is a significant barrier to deployment. Second, it requires the rendering of QR codes. Finally, the code is implemented in assembly. While this was done so that the code is as clear as possible, e.g. the compiler cannot eliminate security-critical code, it makes incremental deployment difficult. In most respects, we argue that SQRL is simply more complicated than WATSUP without additional benefit.
+\subsection{Related work}
+
+One solution to many of the above problems is Password Multiplier, which derives a site-specific password from a base password and the site's hostname. This uses SHA-1 as a key derivation function, and the hostname as a salt. Key derivation functions are functions that take the user's base password and produce multiple distinct high entropy keys by using a distinct salt. If one derived key is compromised, the base password and all other keys remain secure \cite{Halderman:2005}. This does not protect against replay attacks on the same site. In addition, if everyone were to use this and the server failed to adequately salt and hash the derived keys, then everyone would be using the same salt. In this scenario, a rainbow table attack on a per-hostname basis would be reasonable, particularly against large databases.
+
+Another similar solution is a client-server web authentication protocol known as Secure Quick Reliable Login (SQRL). It performs web authentication on a "something you have" model. SQRL uses a randomly generated master password to provide strong, derived logins on a per-site basis, almost completely eliminating user passwords and making phishing difficult. On a login request, a link or QR code is provided for input to the SQRL app, which may be on a different device. The SQRL app then completes the login. As a side effect, this also protects against phishing \cite{Gibson:2016}. However, SQRL has a few issues. First, it requires its own protocol, and does not run over HTTP. This is a significant barrier to deployment. Second, it requires the rendering of QR codes. Finally, the code is implemented in assembly. While this was done so that the code is as clear as possible, e.g. the compiler cannot eliminate security-critical code, it makes incremental deployment difficult.
 
 \subsection{Implications}
 We argue that any solution to the web authentication problem must resolve the following issues:
 
 \begin{itemize}
 
-    \item The solution should be portable. It should not require any data be stored or transmitted before it can be used on a new device. This means using passwords.
-
     \item Users should not have to trust servers.
+
+    \item The solution should be portable. It should not require any data be stored or transmitted before it can be used on a new device. This means using passwords.
 
     \item Users should be protected against replay and reuse attacks, even without HTTPS.
 
-    \item The solution should allow for phased deployment by not interfering with standard login
+    \item The solution should be as simple as possible for servers to implement, so that any developer can safely add it to their server, without risking user security.
 
-    \item The solution should be as simple as possible for servers to implement, so that any developer can safely add it to their server, without risking user security
+    \item The solution should allow for phased deployment by not interfering with standard login.
 
 \end{itemize}
