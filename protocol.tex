@@ -3,77 +3,77 @@
 
 \subsection{Design}
 
-In the standard web login process, a user inputs their cleartext password into a form and submits it to the server, ideally via HTTPS. With the WATSUP protocol, a user still inputs their cleartext password, but it is never transmitted or stored. Instead, it is salted with the username and hostname, hashed, and then used in a key derivation function to produce a seed for a pseudorandom number generator (PRNG). While this information is deterministically generated, it still serves a similar purpose of a salt by preventing against rainbow table attacks. The PRNG is used to generate an asymmetric key pair. Next, the client requests a nonce from the server; the server generates the nonce and encrypts it with the user's public key, which was stored on user registration. Finally, the client receives the nonce, decrypts it with the deterministically generated private key, and submits the nonce for final authentication (Figure 1).
+In the standard web login process, a user inputs their cleartext password into a form and submits it to the server, ideally via HTTPS. With the WATSUP protocol, a user still inputs their cleartext password, but it is never transmitted or stored. Instead, it is salted with the username and hostname, hashed, and then passed to a key derivation function to produce a seed for a pseudorandom number generator (PRNG). While this information is deterministically generated, it still serves a purpose similar to that of a salt by preventing against rainbow table and dictionary attacks. The PRNG is used to generate an asymmetric key pair. Next, the client requests a nonce from the server; the server generates the nonce and encrypts it with the user's public key. This public key was provided by the user during registration. Finally, the client receives the nonce, decrypts it with the deterministically generated private key, and submits the nonce for final authentication.
 
-This design has a few benefits. First, it is easy for and auditable for the user. If a browser and server were to implement this protocol, users would not need to do anything differently. But more importantly, the method is addresses the attacks mentioned previously.
+This design has a few benefits. It is easy to use and it is auditable, meaning a client can always detect if the server incorrectly implements the protocol. If a browser and server were to implement this protocol, users would not need to do anything differently. In addition, the method is addresses the attacks mentioned previously.
 
 \begin{itemize}
 
     \item \textbf{Eavesdropping:} The user's password is never sent.
 
-    \item \textbf{Data breaches:} Servers never see passwords and therefore cannot store them. Salting on the username protects against site-wide dictionary and rainbow attacks.
+    \item \textbf{Data breaches:} Servers never see passwords and therefore cannot store them. Salting on the username protects against site-wide dictionary and rainbow table attacks.
 
     \item \textbf{Phishing:} The protocol makes phishing more difficult in two ways: first, we use different keys for different hostnames; and second, we never provide the server with a reusable key.
 
     \item \textbf{Replay attack:} Since nonces are good for only one use, replay attacks are prevented.
 
-    \item \textbf{Password reuse:} The protocol primarily mitigates the effects of password by salting with the hostname. While we do not recommend that users rely on a single password, we are realistic in our assumption that some people will reuse passwords.
+    \item \textbf{Password reuse:} The protocol primarily mitigates the effects of password reuse by salting with the hostname. While we do not recommend that users rely on a single password, we are realistic in our assumption that some people will reuse passwords.
 
 \end{itemize}
 
 \subsection{Specification}
 
-We use the following definitions:
+Here we describe our procedure for generating an asymmetric key pair, which is the main cryptographic basis for the security of the WATSUP Protocol. We use the following definitions:
 
 \begin{itemize}
 
-    \item \texttt{hash(x)} is the hash of \texttt{x}
+    \item \texttt{hash(x)} is the hash of \texttt{x}.
 
-    \item \texttt{|} is the concatenation operation
+    \item \texttt{|} is the concatenation operator.
 
     \item \texttt{KDF(key, salt, iterations, hash\_function)} derives an array of bits, with the specified hash function, salt, number of iterations, and key.
 
-    \item \texttt{seed\_PRNG(bit\_array)} provides a cryptographic PRNG seeded from \texttt{bit\_array}
+    \item \texttt{seed\_PRNG(bit\_array)} provides a cryptographic PRNG seeded from \texttt{bit\_array}.
 
-    \item \texttt{key\_gen(prng)} provides an asymmetric key pair generated with the provided PRNG
+    \item \texttt{key\_gen(prng)} provides an asymmetric key pair generated with the provided PRNG.
 
 \end{itemize}
 
-The following is the WATSUP protocol's procedure for generating an asymmetric key pair:
+\noindent The procedure is:
 
 \begin{verbatim}
 salt = hash(hash(hostname)
             | hash(username))
-bits[256] = KDF(root_pass, salt,
-                1000,
+bits[size] = KDF(root_pass, salt,
+                iterations,
                 hash_function)
 prng = seed_PRNG(bits)
 key_pair = key_gen(prng)
 \end{verbatim}
 
+Using a high iteration value as input for KDF is called "key stretching" and makes the base password more difficult to crack.
+
 \subsection{Proof-of-concept}
 
-The proof-of-concept implementation has two components: a back-end web server that is a stand-in for any web application that implements the WATSUP protocol, and an open-source browser extension that sandboxes the login form from the web page and implements the client-side of the WATSUP protocol. The code for both the server and client are available here: \url{https://github.com/watsup-protocol}.
+The proof-of-concept implementation has two components, a back-end web server and an browser extension. The web server is a stand-in for any web application that implements the WATSUP protocol. The browser extension sandboxes the login form from the web page and implements the client-side of the WATSUP protocol. The code for both the server and client are available here: \url{https://github.com/watsup-protocol}.
 
 \subsubsection{Server}
+
+The back-end is written in Python 2.7 and uses the Flask web framework. The server is an instance of Gunicorn, a Python WSGI HTTP server. The server runs on a Heroku instance running Ubuntu 14.04.
 
 To generate the nonce, the server uses Python's \texttt{random} library function \texttt{SystemRandom} which is designed for cryptographic use. The function generates random numbers from information seeded by the operating system. Since the server runs on a UNIX-like operating system, \texttt{SystemRandom} queries \texttt{/dev/urandom} \cite{Python:2017:SystemRandom, Python:2017:urandom}.
 
 To generate the RSA key pair the servers uses \texttt{cryptography}, an open-source Python package developed by the Python Cryptographic Authority \cite{PCA:2017}. The package primarily delegates to "backends" such as OpenSSL and CommonCrypto for the actual for platform-specific cryptographic algorithm implementations. The server uses the SHA-1 hash function for optimal asymmetric encryption padding; SHA-1 is acceptable here because adding padding does not hide sensitive information.
 
-The back-end is written in Python 2.7 and uses the Flask web framework. The server is an instance of Gunicorn, a Python WSGI HTTP server. The server runs on a Heroku instance running Ubuntu 14.04.
-
 \subsubsection{Client}
 
-The client is implemented as a Google Chrome extension and therefore written in JavaScript, HTML, and CSS. While some portions of the code are Chrome-specific, other modern browsers provide the same functionality through similar APIs, and the codebase could be modified to support multiple browsers.
+Ideally a fully deployed implementation of the WATSUP protocol would be integrated into browsers by their vendors. However, for our proof-of-concept implementation, the client is implemented as a Google Chrome extension. It is written in JavaScript, HTML, and CSS.
 
-Importantly, Chrome sandboxes all browser extensions to prevent malicious websites from accessing privileged, extension-only operations \cite{Google:2017:contentSecurityPolicy}. The WATSUP client utilizes this security policy to keep user passwords safe. No other JavaScript program can access the extension's JavaScript program or HTML, both which would contain references to the user's plaintext password.
+Critically, Chrome sandboxes all browser extensions to prevent malicious websites from accessing privileged, extension-only operations \cite{Google:2017:contentSecurityPolicy}. The WATSUP client utilizes this security policy to keep user passwords safe. No other JavaScript program can access the extension's state, which contains references to the user's plaintext password.
 
-For the protocol, first, the extension reads the username and password from their input fields and the hostname from Chrome's tabs API \cite{Google:2017:tabs}. Then the program produces a "salt" by separately hashing the username and hostname with SHA-256, and then rehashes the combination of these two hashes. This "salt" is used for generating a cryptographic key. Next, the extension generates a cryptographic key from the base password and the salt. It uses Password-Based Key Derivation Function 2 (PBKDF2) for 1000 iterations using SHA-256 and the salt to generate 256 bits. This added computation is called "key stretching" and makes the base password more difficult to crack.
-
-Finally, the program generates the RSA key pair. The generated bits are used to seed an ARC4 PRNG, which is used to generate an RSA key, as provided by \texttt{cryptico} \cite{Terrell:2017}.
+For the protocol, the extension reads the username and password from their input fields and the hostname from Chrome's Tabs API \cite{Google:2017:tabs}. The extension follows the key pair generation procedure defined in Specifications. We use SHA-256 as our hash function. We use PBKDF2 as our KDF, with 1000 iterations and SHA256 as the KDF hash function. We use ARC4 as our PRNG. We use Cryptico's \texttt{generateRSAKey} to create a keypair \cite{Terrell:2017}.
 
 \subsection{Deployment}
 
-Deployment of new technologies and protocols to the internet can be a complicated process, and adoption tends to be slow and spotty. We believe the first step would be to recruit a major browser to implement client-side WATSUP, while providing open source browser plugins for all major browsers. Then, we could recruit some major websites and web frameworks to adopt WATSUP. Due to the minimal work required to implement server-side WATSUP, and cross-compatibility with existing login services, any web service should be able to provide the service with ease.
+Deployment of new technologies and protocols to the internet can be a complicated process, and adoption tends to be slow and spotty. We believe the first step would be to recruit a major browser to implement client-side WATSUP, while providing open source browser plugins for all major browsers. Then, we could recruit some major websites and web frameworks to adopt WATSUP. Due to the minimal work required to implement server-side WATSUP and cross-compatibility with existing login services, any web service should be able to support WATSUP with ease.
 
