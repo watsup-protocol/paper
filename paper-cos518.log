@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  16 JAN 2017 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  16 JAN 2017 18:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -672,8 +672,8 @@ Underfull \hbox (badness 1205) in paragraph at lines 70--71
 ) (./discussion.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
-[6]) (./paper-cos518.bbl
+ [5])
+(./paper-cos518.bbl
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
@@ -690,7 +690,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--13
 \T1/pcr/m/n/10 developer . chrome . com / extensions /
  []
 
-
+[6]
 Underfull \hbox (badness 1681) in paragraph at lines 15--18
 \T1/pcr/m/n/10 chrome . com / extensions / tabs$[]\T1/ptm/m/n/10 .  [On-line;
  []
@@ -825,11 +825,9 @@ Overfull \hbox (110.25742pt too wide) in paragraph at lines 117--123
 ed$[]\T1/ptm/m/n/10 .
  []
 
-[7])
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
- [8
-
-]
+ [7]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
  (./paper-cos518.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
@@ -839,22 +837,22 @@ Package rerunfilecheck Info: File `paper-cos518.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
  ) 
 Here is how much of TeX's memory you used:
- 7321 strings out of 493014
- 107402 string characters out of 6133351
- 198274 words of memory out of 5000000
+ 7320 strings out of 493014
+ 107396 string characters out of 6133351
+ 196274 words of memory out of 5000000
  10682 multiletter control sequences out of 15000+600000
  50887 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,8n,43p,1643b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,8n,43p,1643b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on paper-cos518.pdf (8 pages, 92281 bytes).
+Output written on paper-cos518.pdf (7 pages, 90831 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 215 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
+ 228 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
