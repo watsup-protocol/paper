@@ -28,7 +28,7 @@
 
 \usepackage{fancyhdr}
 \usepackage[numbers,sort]{natbib}
-\usepackage{xspace}
+%\usepackage{xspace}
 \usepackage{booktabs}
 \usepackage{subfigure}
 \usepackage[T1]{fontenc}
@@ -77,10 +77,16 @@ bookmarksopen = {true}
    \fi}
 \makeatother
 
+\raggedbottom
 \clubpenalty=10000  % Don't allow orphans
 \widowpenalty=10000 % Don't allow widows
 
-\title{\textbf{\TITLE}}
+\title{
+\begin{minipage}{13cm}
+\centering
+\fontsize{1em}{1em}{\textbf{\TITLE}}
+\end{minipage}
+}
 \author{\AUTHORS}
 \date{}
 
@@ -127,8 +133,6 @@ bookmarksopen = {true}
 \begin{document}
 \maketitle
 
-\noindent \large{\textbf{Abstract}}\\
-\\
 \input{abstract} 
 \input{intro}
 \input{background}

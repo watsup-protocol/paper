@@ -5,7 +5,6 @@
 
 Verifying a user's identity is an important challenge in internet security. Passwords, despite their many drawbacks, are a critical and ubiquitous solution to the problem. Today, anyone who shops, banks, communicates, or socializes online creates multiple user accounts with a number of websites. But password usage has a number of risks, and existing solutions have disadvantages. The WATSUP protocol is designed to eliminate or mitigate the common risks mentioned below.
 
-
 \subsubsection{Eavesdropping}
 
 \textbf{Solution:} \emph{HTTPS}
@@ -13,7 +12,6 @@ Verifying a user's identity is an important challenge in internet security. Pass
 \noindent\textbf{Complication:} \emph{Not always supported}\\
 
 \noindent A common risk is that a user's password is captured in transit as plaintext. The most popular solution to eavesdropping is to use HTTPS, which tunnels an HTTP connection through a TLS connection. Unfortunately, while HTTPS is supported by most large companies, it is still not universally used \cite{Aas:2016}. In addition, many users may not realize that they should not use websites that do not support HTTPS.
-
 
 \subsubsection{Data breaches}
 
@@ -23,7 +21,6 @@ Verifying a user's identity is an important challenge in internet security. Pass
 
 \noindent A preventable, hidden risk users face is that their passwords are improperly stored on a company's web server. As discussed in the introduction, data breaches have happened or been discovered as recently as last year, often at staggering scales. The most common methods to mitigate the effects of losing passwords is to salt and hash them. A cryptographic hash function is a one-way function for which it is easy to verify that an input is correct, but hard to extract the input from the output. A company should hash a new password before saving it in a database; to authenticate a user, it hashes the candidate password and compares it to the hashed password on record. Salting passwords adds fixed random information to each password. Combining these methods helps prevent rainbow table attacks in which precomputed tables of common passwords hashed with typical hashing algorithms are used to decode hashed passwords. They also help prevent an attack reusing a compromised password on another website. Unfortunately, many popular websites do not properly handle user data. For example, in its official statement, Yahoo only confirmed that the "vast majority" of passwords had been securely hashed before they were stolen in the 2013 attack \cite{Lord:2016}, implying some (out of a billion) were not. And in a 2012 LinkedIn data breach, LinkedIn failed to salt users' passwords and only hashed them with the SHA-1 algorithm \cite{Perlroth:2012, Hackett:2016}, which has been known to be insufficiently secure as early as 2005 \cite{Wang:2005}.
 
-
 \subsubsection{Phishing}
 
 \textbf{Solution:} \emph{Client-side hashing on hostname}
@@ -32,7 +29,6 @@ Verifying a user's identity is an important challenge in internet security. Pass
 
 \noindent Another common means of compromising a user's account is called "phishing." In phishing, a user is asked to submit their username and password to a malicious website that poses as a legitimate one, typically through an email that encourages the user to log in to a domain posing as the legitimate service. One solution to this problem is to hash the password with the website's hostname as a salt before sending it. If this is done consistently, phishing is prevented because the malicious website will have a different hostname. This allows for improved portability, since no secret data is stored, and no trusted third party is required \cite{Halderman:2005}. However this method is still vulnerable to weak passwords and poor server salting. For example, an attacker who has compromised a database of passwords that have been salted with the hostname and then hashed can still create a rainbow table for that website.
 
-
 \subsubsection{Replay attacks}
 
 \textbf{Solution:} \emph{Nonces}
@@ -40,7 +36,6 @@ Verifying a user's identity is an important challenge in internet security. Pass
 \noindent\textbf{Complication:} \emph{Not typically implemented}\\
 
 \noindent Another common attack vector is called a "replay attack." An adversary intercepts the user's encrypted authentication credentials and re-transmits them without modification in a subsequent login to masquerade as the user. In a replay attack, the adversary does not need to decrypt the data to pose as the user. To prevent this, each encrypted communication must include a nonce, which is a number that can only ever be used once. This scrambles the encrypted data so that a re-transmitted sequence will be invalid. HTTPS includes this feature.
-
 
 \subsubsection{Password reuse}
 
