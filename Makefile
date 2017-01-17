@@ -1,12 +1,12 @@
 NAME=paper
 
-TARGET=$(NAME)-cos518
+TARGET=$(NAME)-cos561
 BIBTEX := bibtex
 TGIF   := tgif
 XFIG   := xfig
 GNUPLOT:= gnuplot
 
-SOURCES=$(NAME)-cos518.tex \
+SOURCES=$(NAME)-cos561.tex \
 	abstract.tex \
 	intro.tex \
 	background.tex \
